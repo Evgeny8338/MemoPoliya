@@ -53,3 +53,39 @@
   max-height: 90%;
   object-fit: contain;
 }
+
+/* Медиа-запросы для адаптивности */
+@media (min-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .game-board {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .game-board {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .game-board {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+}
