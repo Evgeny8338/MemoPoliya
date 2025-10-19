@@ -62,7 +62,7 @@
 /* Медиа-запросы для адаптивности */
 @media (min-width: 768px) {
   .game-board {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
   }
 }
@@ -86,21 +86,11 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 8px;
   }
-
-  .card {
-    width: 46px;
-    height: 70px;
-  }
 }
 
 @media (max-width: 360px) {
   .game-board {
     grid-template-columns: repeat(5, 1fr);
     gap: 6px;
-  }
-
-  .card {
-    width: 23px;
-    height: 35px;
   }
 }
