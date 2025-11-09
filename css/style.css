@@ -2,19 +2,21 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 15px;
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 45px 50px;
   background-color: rgb(65, 39, 114);
+  justify-content: space-between;
 }
 
 .card {
-  width: 114px;
-  height: 174px;
+  width: 120px;
+  height: 150px;
   perspective: 1000px;
   cursor: pointer;
   border: 5px solid #8400ff;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .card-inner {
@@ -36,6 +38,7 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-front {
@@ -57,9 +60,9 @@
 }
 
 .card-front img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
